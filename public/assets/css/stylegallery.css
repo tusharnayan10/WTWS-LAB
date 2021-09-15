@@ -1,0 +1,674 @@
+* {
+    box-sizing: border-box;
+  }
+#gallery{
+    background-color: #eeeeee;
+    padding: 3%;
+    text-align: center;
+}  
+#gallery .gallery-heading{
+    padding: 2%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #eeeeee; */
+    color: #2B2B2B;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+@media(max-width: 630px){
+    #gallery .gallery-heading{
+        padding: 2%;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        /* background-color: #eeeeee; */
+        color: #2B2B2B;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    #gallery .container {
+        position: relative;
+        text-align: center;
+        padding-top: 2%;
+        background-color: #2B2B2B;
+        width: 100%;
+    }
+    
+}
+/* Position the image container (needed to position the left and right arrows) */
+@media(min-width: 1000px){
+    #gallery .container {
+        position: relative;
+        text-align: center;
+        padding-top: 2%;
+        background-color: #2B2B2B;
+        width: 50%;
+    }
+}
+
+
+  /* Hide the images by default */
+  #gallery  .mySlides {
+    display: none;
+    /* text-align: center; */
+  }
+  #gallery .Image{
+      text-align: center;
+      width: 100%;
+  }
+  /* Add a pointer when hovering over the thumbnail images */
+  #gallery .cursor {
+    cursor: pointer;
+  }
+  /* Position the "next button" to the right */
+  #gallery .next {
+    right: 0;
+    border-radius: 5px 45px 45px 5px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  #gallery .prev:hover,
+  .next:hover {
+    background-color: #eeeeee;
+  }
+  
+  /* Number text (1/3 etc) */
+  #gallery .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  #gallery .caption-container {
+    text-align: center;
+    background-color: #2B2B2B;
+    padding: 1px;
+    color: white;
+  }
+  #gallery #caption{
+    margin-bottom: 0rem;
+  }
+  #gallery .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  #gallery .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  #gallery .demo {
+    opacity: 0.85;
+    border: 2px solid #2B2B2B;
+  }
+  
+  #gallery .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  :root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+/* ABOUT-US*/
+
+#about-us .about-content{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #001E6C;
+}
+#about-us .about-heading{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #001E6C;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding: 0%;
+  margin-bottom: 20px;
+}
+#about-us .attribution { 
+  font-size: 11px; text-align: center; 
+}
+#about-us .attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+#about-us h1:first-of-type {
+  font-weight: var(--weight1);
+  color: var(--varyDarkBlue);
+
+}
+
+#about-us h1:last-of-type {
+  color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+  #about-us h1 {
+      font-size: 1.5rem;
+  }
+}
+
+#about-us .header {
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+#about-us .header p {
+  margin: 0 auto;
+  line-height: 2;
+  color: var(--grayishBlue);
+}
+
+
+#about-us .box p {
+  color: #000;
+}
+
+#about-us .box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px  (--varyDarkBlue);
+  padding: 30px;
+  margin: 10px;  
+}
+
+#about-us img {
+  float: right;
+}
+
+@media (max-width: 450px) {
+#about-us .box {
+      width: 85%;
+  }
+  #about-us img {
+    visibility: hidden;
+}  
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+#about-us .box {
+      text-align: center;
+      width: 80%;
+  }
+}
+
+#about-us .red {
+border-left: 1px solid var(--red);
+border-bottom: 1px solid var(--red);
+  border-top: 3px solid var(--red);
+}
+#about-us .orange {
+border-left: 1px solid var(--orange);
+border-bottom: 1px solid var(--orange);
+border-top: 3px solid var(--orange);
+}
+#about-us .cyan  {
+border-left: 1px solid var(--cyan);
+border-bottom: 1px solid var(--cyan);
+border-top: 3px solid var(--cyan);
+}
+#about-us .blue  {
+border-left: 1px solid var(--blue);
+border-bottom: 1px solid var(--blue);
+border-top: 3px solid var(--blue);
+}
+
+#about-us h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+#about-us .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #about-us .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #about-us .box-down {
+      position: relative;
+      top: 100px;
+  }
+  #about-us.box {
+      width: 80%;
+   
+  }
+  #about-us .header p {
+      width: 80%;
+  }
+  
+}
+
+/* THEME */
+
+
+
+#Theme .attribution { 
+    font-size: 11px; text-align: center; 
+}
+#Theme .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+#Theme h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+#Theme h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+  #Theme h1 {
+        font-size: 1.5rem;
+    }
+}
+
+#Theme .header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+#Theme .header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+#Theme .box p {
+    color: var(--grayishBlue);
+}
+
+#Theme .box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px  (--varyDarkBlue);
+    padding: 30px;
+    margin: 10px;  
+}
+
+#Theme img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+  #Theme .box {
+        width: 85%;
+    }
+    #Theme img {
+      visibility: hidden;
+  }  
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  #Theme .box {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+#Theme .red {
+  border-left: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
+    border-top: 3px solid var(--red);
+}
+#Theme .orange {
+  border-left: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+  border-top: 3px solid var(--orange);
+}
+#Theme .cyan  {
+  border-left: 1px solid var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  border-top: 3px solid var(--cyan);
+}
+#Theme .blue  {
+  border-left: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
+  border-top: 3px solid var(--blue);
+}
+
+#Theme h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+  #Theme .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #Theme .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Theme .box-down {
+        position: relative;
+        top: 100px;
+    }
+    #Theme .box {
+        width: 80%;
+     
+    }
+    #Theme .header p {
+        width: 80%;
+    }
+    
+}
+#about-it .about-content{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #001E6C;
+}
+#about-it .about-heading{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #001E6C;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding: 0%;
+  margin-bottom: 20px;
+}
+
+#about-it .attribution { 
+  font-size: 11px; text-align: center; 
+}
+#about-it .attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+#about-it h1:first-of-type {
+  font-weight: var(--weight1);
+  color: var(--varyDarkBlue);
+
+}
+
+#about-it h1:last-of-type {
+  color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+  #about-it h1 {
+      font-size: 1.5rem;
+  }
+}
+
+#about-it .header {
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+#about-it .header p {
+  margin: 0 auto;
+  line-height: 2;
+  color: var(--grayishBlue);
+}
+
+
+#about-it .box p {
+  color: #000;
+}
+
+#about-it .box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px  (--varyDarkBlue);
+  padding: 30px;
+  margin: 10px;  
+}
+
+#about-it img {
+  float: right;
+}
+
+@media (max-width: 450px) {
+  #about-it .box {
+      width: 85%;
+  }
+  #about-it img {
+    visibility: hidden;
+}  
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  #about-it .box {
+      text-align: center;
+      width: 80%;
+  }
+}
+
+#about-it .red {
+border-left: 1px solid var(--red);
+border-bottom: 1px solid var(--red);
+  border-top: 3px solid var(--red);
+}
+#about-it .orange {
+border-left: 1px solid var(--orange);
+border-bottom: 1px solid var(--orange);
+border-top: 3px solid var(--orange);
+}
+
+
+#about-it h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+  #about-it .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #about-it .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #about-it.box-down {
+      position: relative;
+      top: 100px;
+  }
+  #about-it.box {
+      width: 80%;
+   
+  }
+  #about-it .header p {
+      width: 80%;
+  }
+  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+#register {
+  margin: 12px 0 12px 0;
+}
+#register .courses-container{
+  width: 70%;
+}
+#register .course h6 {
+	opacity: 1;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#register .course h5 {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 2px 0;
+}
+
+#register .course-preview {
+	background-color: #2A265F;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+#register .course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+#register .course-info {
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+#register .floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+#register .floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  #register .courses-container{
+    width: 95%;
+  }
+  #register .course-preview {
+    background-color: #2A265F;
+    color: #fff;
+    padding: 10px 2px 10px 2px;
+    max-height: 400px;
+    justify-content: center;
+  }
+  #register .course h6 {
+    opacity: 1;
+    margin: 0;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  #register .course h5 {
+    letter-spacing: .5px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin: 2px 0;
+  }
+  #register .headingstyle {
+    padding: 2px;
+    font-size: .8rem;
+  }
+  #register .bodycontent{
+    font-size: .9rem;
+  }
+}
+
+.main-container {
+  padding: 30px;
+}
+
+/* HEADING */
+
+#register .heading {
+  text-align: center;
+}
+
+#register.heading__title {
+  font-weight: 100;
+}
+
+#register .heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+#register .heading__link {
+  text-decoration: none;
+}
+
+#register .heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+#register .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#register .card {
+  margin: 20px;
+  padding: 20px;
+  width: 90%;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+#register.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+
+
+#register .card__title {
+  font-weight: 100;
+  color: #ffffff;
+}
+#register .card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
