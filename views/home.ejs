@@ -1,0 +1,152 @@
+<%- include('partials/header'); -%>
+    <section id="lab4">
+        <div class="container section-gap">
+            <h1> Hello, Coder</h1>
+            <div class="alert alert-success">
+                <strong>Class and JavaScript-Code</strong> The Navigation buttons used for navigate to different labs
+                uses
+                <a href="#labnavigation" class="alert-link">javascript-code and Class Attribute</a>.
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h1>Different HTML elements can point to the same class name</h1>
+            <h2>Information Technology</h2>
+            <article>The Department of Information Technology at Sikkim Manipal Institute of Technology was started in
+                the year 1999. The aim of the department is to impart quality education in the area of Information
+                Technology and to produce competent and industry ready engineers to meet the needs of the corporate
+                world, different government sectors and the society as a whole.<br>
+
+                The objective of various courses run by the department is to give in depth knowledge related to the
+                fundamentals of Information and Communication Technologies, associated Software and Hardware
+                Technologies, and also to make the students aware of the currents trends in the area of Information and
+                Communication Technologies. <br>
+
+                The department has six well equipped laboratories covering almost all major practical domains related to
+                Information and Communication Technologies. The department also has a departmental library containing
+                more than five hundred titles.</article>
+        </div>
+        <div class="jumbotron">
+            <h2>Electronics Communication Engineering </h2>
+            <article>"Department of Electronics and Communication Engineering at a Glance"
+
+                The inception of Department of Electronics and Communication Engineering dates back to the earliest days
+                of the university in the year 1997 and remains one of its distinctive features. Having established with
+                a firm footing in the field of technical education today, we can proudly reminiscence a wonderful period
+                of growth by leaps and bounds for almost 25 long years. The department stemmed with intent to provide
+                educational innovation, advance knowledge and educate student. This spirit still guides us in every
+                possible way to tailor, shape and build the finest technocrats.
+                The cohesive unit of 26 dedicated, qualified and motivated faculty members with a blend of experience
+                and exuberance led by a young and vibrant leader has held the departmental banner flying high for the
+                last 25 years. With expertise in diverse fields ranging from IOT, 5G, Satellite Communication, Signal
+                Processing, Microwave and Antenna, , the department is proud to have honed for over 1500 alumni till
+                date. The enduring dedication and commitment of our faculty members and students has fueled many quality
+                research publications with citations. Apart from regular academic course, the teachers and students are
+                also engaged in conducting workshops in alliance with renowned external agencies like IITs, ISRO, DRDO,
+                ISI Kolkata, University of Calcutta, to name a few. These workshops have been immensely beneficial to
+                its participants which are proven by the skill levels exhibited by them.</article>
+        </div>
+        <div class="jumbotron">
+            <h2>Computer Science Engineering</h2>
+            <article>The inception of Department of Computer Science & Engineering dates back to the earliest days of
+                the university in the year 1997 and remains one of its distinctive features. Having established with a
+                firm footing in the field of technical education today, we can proudly reminiscence a wonderful period
+                of growth by leaps and bounds for 20 long years. The department stemmed with intent to provide
+                educational innovation, advance knowledge and educate student. This spirit still guides us in every
+                possible way to tailor, shape and build the finest technocrats.
+            </article>
+        </div>
+        <div class="container">
+            <div class="card bg-info text-white">
+                <div class="card-body">JavaScript can access elements with a specific class name with the
+                    getElementsByClassName() method</div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2>Finding HTML Elements by Class Name</h2>
+                    <p class="intro">Hello World!</p>
+                    <p class="intro">Hello Sweden!</p>
+                    <p class="intro">Hello Japan!</p>
+                    <p id="byn"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card bg-success text-white">
+                <div class="card-body">The id attribute is used to specify a unique id for an HTML element</div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2>Finding HTML Elements by Id Name</h2>
+                    <a href="#labnavigation" class="alert-link">Click Me</a>.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card bg-secondary text-white">
+                <div class="card-body">The id attribute is also used to create HTML bookmarks</div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2>HTML Elements by Id Name</h2>
+                    <a href="#labnavigation" class="alert-link">Click Me</a>.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card bg-info text-white">
+                <div class="card-body">The id attribute is also used to create HTML bookmarks</div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2>HTML Elements by Id Name</h2>
+                    <a href="#labnavigation" class="alert-link">Click Me</a>.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card bg-info text-white">
+                <div class="card-body">JavaScript can access an element with a specific id with the getElementById()
+                    method</div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2>GetElements by Id Name</h2>
+                    <h2>Set HTML</h2>
+                    <div id="01">
+                        <p>Hello SMIT!</p>
+                    </div>
+                    <div id="02">
+                        <p>Hello Tushar Nayan!</p>
+                    </div>
+
+                    <p id="bynID"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" style="height: 100px; margin-top: 100px;">
+        <h1>Design and Develped With <i class="fas fa-heart"></i></h1>
+        <p>Lorem ipsum <i class="fas fa-thumbs-up"> </i> dolor sit amet consectetur adipisicing elit. Nesciunt
+            consequuntur fugiat, necessitatibus et
+            excepturi odit ex officia quia repellat quidem eos animi iusto soluta architecto, ipsa perspiciatis aut
+            voluptas unde? </p>
+        <div class="container" style="height: 100px;">
+
+        </div>
+    </div>
+
+    <script>
+        const myElements = document.getElementsByClassName("intro");
+        document.getElementById("byn").innerHTML = "The first paragraph with class='intro' is: " + myElements[0].innerHTML;
+        document.getElementById("bynID").innerHTML = "<p>Established in the year 1997, Sikkim Manipal Institute of technology is picturesque campus located in the bank of river Teesta and is a constituent college of Sikkim Manipal University which offers courses in the field of Engineering, Basic Sciences, Computer</p > ";
+    </script>
+
+
+
+    <%- include('partials/footer'); -%>

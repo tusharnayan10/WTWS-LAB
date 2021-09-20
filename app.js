@@ -16,6 +16,10 @@ app.get("/home", function (req, res) {
     res.render("home");
 });
 
+app.get("/home", function (req, res) {
+    res.render("home");
+});
+
 app.get("/list", function (req, res) {
     res.render("list");
 });

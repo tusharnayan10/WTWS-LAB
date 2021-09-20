@@ -1017,3 +1017,14 @@ footer{
         color: #fff;
     }
 }
+
+#lab4 .section-gap{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+.section-gap{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
