@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="We have great pleasure in informing you that Department of Information Technology, Sikkim Manipal Institute of Technology is organizing First International..." />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- semantic-ui-link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4ca1a98fd1.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Sikkim Manipal Institute of Technology – Sikkim Manipal University</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Mycustom style sheet  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/stylegallery.css">
+</head>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Success !</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod nobis autem quibusdam
+            dignissimos consequuntur tempore reiciendis, sint cumque laboriosam voluptate ex libero rem odit, aut
+            ducimus amet voluptatem ipsa!</p>
+
+        <h1>Thank you we have received your response 👍</h1>
+        <p>We will try to connect with you very soon🤟</p>
+        <div class="container">
+            <% if(msg==='' ){ %>
+                <p>
+                    <%=msg%>
+                </p>
+                <% }else{ %>
+                    <div style="text-align: center;" class="alert alert-success alert-dismissible fade show"
+                        role="alert">
+                        <strong>
+                            <%=msg%>
+                        </strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <% } %>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1>Calculator</h1>
+    </div>
+    <div class="container">
+        <h1>MY Calculator</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="num1">Number 1:</label>
+                        <input type="text" class="form-control" id="firstNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="num2">Number 1:</label>
+                        <input type="text" class="form-control" id="secondNumber">
+                    </div>
+                    <input type="button" class="btn btn-outline-secondary" onClick="multiplyBy()" Value="Multiply" />
+                    <input type="button" class="btn btn-outline-primary" onClick="divideBy()" Value="Divide" />
+                    <input type="button" class="btn btn-outline-secondary" onClick="AddBy()" Value="ADD" />
+                    <input type="button" class="btn btn-outline-primary" onClick="SUBTRACTBy()" Value="SUBTRACT" />
+                </form>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-warning">
+                    <p>The Result is : <br>
+                        <span id="result"></span>
+                    </p>
+                </button>
+
+            </div>
+        </div>
+
+        <script>
+            function multiplyBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 * num2;
+            }
+
+            function divideBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 / num2;
+            }
+
+            function SUBTRACTBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 - num2;
+            }
+            function AddBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = Number(num1) + Number(num2);
+            }
+        </script>
+    </div>
+    <div class="jumbotron">
+        <a href="form" class="btn btn-dark btn-block">Back to From</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aperiam neque deserunt culpa recusandae id sit
+            dolor doloremque corporis consequatur ea pariatur ullam temporibus at magni suscipit quasi, labore deleniti?
+        </p>
+        <a href="form" class="btn btn-secondary">Back</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, doloribus a repudiandae quo excepturi
+            illo similique incidunt rerum voluptate, placeat adipisci ea veritatis cumque temporibus. Molestias quisquam
+            quidem nostrum exercitationem?</p>
+    </div>
+</div>
+
+<%- include('partials/footer'); -%>

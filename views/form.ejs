@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="We have great pleasure in informing you that Department of Information Technology, Sikkim Manipal Institute of Technology is organizing First International..." />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- semantic-ui-link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4ca1a98fd1.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Sikkim Manipal Institute of Technology – Sikkim Manipal University</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Mycustom style sheet  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/stylegallery.css">
+</head>
+
+<body>
+    <div class="container-fluid smit-logo">
+        <img class="smit-logo-image" src="./assets/images/smit_logo_small1_png.png" alt="logo" data-aos="zoom-in">
+    </div>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 1</strong> Click me to load Lab 1 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab1()">WTWSLab-1</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 1</strong> Click me to load Lab 1 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab1()">WTWSLab-1</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 2</strong> Click me to load Lab 2 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab2()">WTWSLab-2</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 3</strong> Click me to load Lab 3 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab3()">WTWSLab-3</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 4</strong> Click me to load Lab 4 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab4()">WTWSLab-4</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 5</strong> Click me to load Lab 5 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab5()">WTWSLab-5</button>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".close").click(function () {
+                $("#myAlert").alert("close");
+            });
+        });
+        function lab1() {
+            window.open("https://distracted-liskov-780ee8.netlify.app/");
+        }
+        function lab2() {
+            window.open("https://distracted-liskov-780ee8.netlify.app/test.html")
+        }
+        function lab4() {
+            window.open("home");
+        }
+        function lab5() {
+            window.open("form");
+        }
+        function lab3() {
+            window.open("list");
+        }
+
+    </script>
+    <div class="jumbotron" data-aos="zoom-in">
+        <h1>Hey Folks, Please fill the form 💖</h1>
+    </div>
+    <div class="container" data-aos="zoom-in">
+        <form method="POST" action="/response">
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date of Birth:</label>
+                <input type="date" class="form-control" id="date" placeholder="Enter DOB" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="class10">X in Percentage(Without %):</label>
+                <input type="number" class="form-control" id="class10" placeholder="Enter X Percentage " name="class10"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="class12">XII in Percentage(Without %):</label>
+                <input type="number" class="form-control" id="class12" placeholder="Enter XII Percentage" name="class12"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Contact Number:</label>
+                <input type="number" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="address">Permanent Address:</label>
+                <textarea class="form-control" rows="3" id="address" placeholder="Enter Permanent Address"
+                    name="address"></textarea>
+            </div>
+            <button type="submit" onClick="submit()" class="btn btn-primary btn-block">Submit</button>
+        </form>
+
+        <script>
+            function submit() {
+                var name = document.getElementById("name").value;
+                var date = document.getElementById("date").value;
+                var class10 = document.getElementById("class10").value;
+                var class12 = document.getElementById("class12").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var address = document.getElementById("address").value;
+
+                document.getElementById("result").innerHTML = name;
+            }
+        </script>
+        <div class="jumbotron">
+            <div class="container">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nesciunt fuga laborum sed rerum,
+                    aperiam vitae, sit minus corrupti impedit perspiciatis sapiente, recusandae consequatur
+                    exercitationem
+                    dolorem itaque fugit reprehenderit voluptas.</p> <br>
+                <br>
+
+                <a href="success" class="btn btn-dark btn-block">Open Calculator</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nesciunt fuga laborum sed rerum,
+                    aperiam vitae, sit minus corrupti impedit perspiciatis sapiente, recusandae consequatur
+                    exercitationem
+                    dolorem itaque fugit reprehenderit voluptas.</p> <br>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+    <%- include('partials/footer'); -%>

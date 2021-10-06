@@ -11,3 +11,53 @@
         <a href="list" class="btn btn-secondary">Back</a>
     </div>
 <%- include('partials/footer'); -%>
+
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>My Calculator</h1>
+    <form>
+        <label for="firstNumber">1st Number:</label><br>
+        <input type="text" id="firstNumber" /><br>
+        <label for="secondNumber">2nd Number:</label><br>
+        <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+        <input type="button" onClick="AddBy()" Value="ADD" />
+        <input type="button" onClick="SUBTRACTBy()" Value="SUBTRACT" />
+    </form>
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+    <script>
+        function multiplyBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function divideBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+
+        function SUBTRACTBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 - num2;
+        }
+        function AddBy() {
+            var num1 = document.getElementById("firstNumber").value;
+            var num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = Number(num2) + Number(num1);
+        }
+    </script>
+</body>
+
+</html> -->
