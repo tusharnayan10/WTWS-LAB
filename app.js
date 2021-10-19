@@ -52,6 +52,10 @@ app.get("/list", function (req, res) {
     res.render("list");
 });
 
+app.get("/lab6", function (req, res) {
+    res.render("lab6");
+});
+
 app.get("/cse", function (req, res) {
     res.render("cse");
 });

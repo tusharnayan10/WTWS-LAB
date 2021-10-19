@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sikkim Manipal Institute of Technology – Sikkim Manipal University</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 1</strong> Click me to load Lab 1 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab1()">WTWSLab-1</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible" id="myAlert" data-aos="zoom-in">
+            <button type="button" class="close">&times;</button>
+            <strong>Lab 2</strong> Click me to load Lab 2 work! <br>
+            <button type="button" class="btn btn-success" onclick="lab2()">WTWSLab-2</button>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".close").click(function () {
+                $("#myAlert").alert("close");
+            });
+        });
+        function lab1() {
+            window.open("https://distracted-liskov-780ee8.netlify.app/");
+        }
+        function lab2() {
+            window.open("https://distracted-liskov-780ee8.netlify.app/test.html")
+        }
+    </script>
+    <div class="jumbotron" data-aos="zoom-in">
+        <h1>Hey Folks, Please fill the form 💖</h1>
+    </div>
+    <div class="container" data-aos="zoom-in">
+
+        <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date of Birth:</label>
+            <input type="date" class="form-control" id="date" placeholder="Enter DOB" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="class10">X in Percentage(Without %):</label>
+            <input type="number" class="form-control" id="class10" placeholder="Enter X Percentage " name="class10"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="class12">XII in Percentage(Without %):</label>
+            <input type="number" class="form-control" id="class12" placeholder="Enter XII Percentage" name="class12"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Contact Number:</label>
+            <input type="number" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Permanent Address:</label>
+            <textarea class="form-control" rows="3" id="address" placeholder="Enter Permanent Address"
+                name="address"></textarea>
+        </div>
+        <input type="submit" onClick="submit()" class="btn btn-primary btn-block" />
+        <div class="alert alert-success">
+            <p><strong>Success!</strong> Data is : <span id="display_message"></span> </p>.
+        </div>
+        <script>
+            function submit() {
+                var name = document.getElementById("name").value;
+                var date = document.getElementById("date").value;
+                var class10 = document.getElementById("class10").value;
+                var class12 = document.getElementById("class12").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var address = document.getElementById("address").value;
+
+                const msg = "Name: " + name + "      Email: " + email + "      Contact No: " + phone + "    Address: " + address + "\n DOB: " + date + "    Class X: " + class10 + "     Class XII: " + class12;
+
+                document.getElementById("display_message").innerHTML = msg;
+            }
+        </script>
+        <div class="jumbotron">
+            <div class="container">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nesciunt fuga laborum sed rerum,
+                </p> <br>
+                <br>
+            </div>
+
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1>Calculator</h1>
+    </div>
+    <div class="container">
+        <h1>MY Calculator</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="num1">Number 1:</label>
+                        <input type="text" class="form-control" id="firstNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="num2">Number 1:</label>
+                        <input type="text" class="form-control" id="secondNumber">
+                    </div>
+                    <input type="button" class="btn btn-outline-secondary" onClick="multiplyBy()" Value="Multiply" />
+                    <input type="button" class="btn btn-outline-primary" onClick="divideBy()" Value="Divide" />
+                    <input type="button" class="btn btn-outline-secondary" onClick="AddBy()" Value="ADD" />
+                    <input type="button" class="btn btn-outline-primary" onClick="SUBTRACTBy()" Value="SUBTRACT" />
+                </form>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-warning">
+                    <p>The Result is : <br>
+                        <span id="result"></span>
+                    </p>
+                </button>
+
+            </div>
+        </div>
+
+        <script>
+            function multiplyBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 * num2;
+            }
+
+            function divideBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 / num2;
+            }
+
+            function SUBTRACTBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 - num2;
+            }
+            function AddBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = Number(num1) + Number(num2);
+            }
+        </script>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse porro aliquid cumque impedit vero quaerat
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="jumbotron">
+            <div class="copyright" data-aos="fade-up">
+                <p> Designed and Developed by <a target="_black" href="https://github.com/tusharnayan10">Tushar
+                        Nayan</a> ©
+                    2021.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+</html>
