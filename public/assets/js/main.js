@@ -59,3 +59,22 @@ function AddBy() {
     num2 = document.getElementById("secondNumber").value;
     document.getElementById("result").innerHTML = Number(num1) + Number(num2);
 }
+
+function fact() {
+    n = document.getElementById("firstNumber").value;
+    if (n < 0) {
+        document.getElementById("result").innerHTML = 'Error! Factorial for negative number does not exist.';
+    }
+    else if (number === 0) {
+        document.getElementById("result").innerHTML = 'Factorial of 0 is = 1';
+
+    }
+    else {
+        let fact = 1;
+        for (var i = 1; i <= number; i++) {
+            fact *= i;
+        }
+        document.getElementById("result").innerHTML = `The factorial of ${n} is ${fact}.`;
+
+    }
+}

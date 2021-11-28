@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
 </head>
 
 
@@ -47,69 +49,6 @@
         <h1>Hey Folks, Please fill the form 💖</h1>
     </div>
     <div class="container" data-aos="zoom-in">
-
-        <div class="form-group">
-            <label for="Name">Name:</label>
-            <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="date">Date of Birth:</label>
-            <input type="date" class="form-control" id="date" placeholder="Enter DOB" name="date" required>
-        </div>
-        <div class="form-group">
-            <label for="class10">X in Percentage(Without %):</label>
-            <input type="number" class="form-control" id="class10" placeholder="Enter X Percentage " name="class10"
-                required>
-        </div>
-        <div class="form-group">
-            <label for="class12">XII in Percentage(Without %):</label>
-            <input type="number" class="form-control" id="class12" placeholder="Enter XII Percentage" name="class12"
-                required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Contact Number:</label>
-            <input type="number" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="address">Permanent Address:</label>
-            <textarea class="form-control" rows="3" id="address" placeholder="Enter Permanent Address"
-                name="address"></textarea>
-        </div>
-        <input type="submit" onClick="submit()" class="btn btn-primary btn-block" />
-        <div class="alert alert-success">
-            <p><strong>Success!</strong> Data is : <span id="display_message"></span> </p>.
-        </div>
-        <script>
-            function submit() {
-                var name = document.getElementById("name").value;
-                var date = document.getElementById("date").value;
-                var class10 = document.getElementById("class10").value;
-                var class12 = document.getElementById("class12").value;
-                var email = document.getElementById("email").value;
-                var phone = document.getElementById("phone").value;
-                var address = document.getElementById("address").value;
-
-                const msg = "Name: " + name + "      Email: " + email + "      Contact No: " + phone + "    Address: " + address + "\n DOB: " + date + "    Class X: " + class10 + "     Class XII: " + class12;
-
-                document.getElementById("display_message").innerHTML = msg;
-            }
-        </script>
-        <div class="jumbotron">
-            <div class="container">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nesciunt fuga laborum sed rerum,
-                </p> <br>
-                <br>
-            </div>
-
-        </div>
-    </div>
-    <div class="jumbotron">
-        <h1>Calculator</h1>
-    </div>
     <div class="container">
         <h1>MY Calculator</h1>
         <div class="row">
@@ -119,14 +58,7 @@
                         <label for="num1">Number 1:</label>
                         <input type="text" class="form-control" id="firstNumber">
                     </div>
-                    <div class="form-group">
-                        <label for="num2">Number 1:</label>
-                        <input type="text" class="form-control" id="secondNumber">
-                    </div>
-                    <input type="button" class="btn btn-outline-secondary" onClick="multiplyBy()" Value="Multiply" />
-                    <input type="button" class="btn btn-outline-primary" onClick="divideBy()" Value="Divide" />
-                    <input type="button" class="btn btn-outline-secondary" onClick="AddBy()" Value="ADD" />
-                    <input type="button" class="btn btn-outline-primary" onClick="SUBTRACTBy()" Value="SUBTRACT" />
+    <input type="button" class="btn btn-outline-primary" onClick="fact()" Value="FACT" />
                 </form>
             </div>
             <div class="col-md-4">
@@ -140,28 +72,13 @@
         </div>
 
         <script>
-            function multiplyBy() {
-                num1 = document.getElementById("firstNumber").value;
-                num2 = document.getElementById("secondNumber").value;
-                document.getElementById("result").innerHTML = num1 * num2;
-            }
-
-            function divideBy() {
-                num1 = document.getElementById("firstNumber").value;
-                num2 = document.getElementById("secondNumber").value;
-                document.getElementById("result").innerHTML = num1 / num2;
-            }
-
-            function SUBTRACTBy() {
-                num1 = document.getElementById("firstNumber").value;
-                num2 = document.getElementById("secondNumber").value;
-                document.getElementById("result").innerHTML = num1 - num2;
-            }
+        
             function AddBy() {
                 num1 = document.getElementById("firstNumber").value;
                 num2 = document.getElementById("secondNumber").value;
                 document.getElementById("result").innerHTML = Number(num1) + Number(num2);
             }
+
         </script>
     </div>
     <div class="container">
@@ -170,8 +87,68 @@
             </p>
         </div>
     </div>
+    <script>
+        function fact() {
+            n = document.getElementById("firstNumber").value;
+            if (n < 0) {
+                document.getElementById("result").innerHTML = 'Error! Factorial for negative number does not exist.';
+            }
+            else if (number === 0) {
+                document.getElementById("result").innerHTML = 'Factorial of 0 is = 1';
 
-    <footer>
+            }
+            else {
+                let fact = 1;
+                for (var i = 1; i <= number; i++) {
+                    fact *= i;
+                }
+                document.getElementById("result").innerHTML = fact;
+
+            }
+        }
+    </script>
+    <h3 id="mv">Input Array Elements</h3>
+    <form class="" action="index.html" method="post">
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <button type="button" name="button" onclick="ns()">
+            Submit
+        </button>
+    </form>
+    <html>
+    
+    <body>
+        <p id="demo"></p>
+        <script>
+            const person = {
+                firstname: "John",
+                lastname: "Doe",
+                age: 50,
+                eyecolor: "blue"
+            };
+            delete person.age;
+            document.getElementById("demo").innerHTML =
+                person.firstname + " is " + person.age + " years old.";
+        </script>
+    </body>
+    
+    </html>
+    <p id="var"></p>
+    
+    <p id="sorted"></p>
+    <script>
+            var v = "The respective values are :";
+        func                var input = document.getElementsByName('array[]');
+                                    for (var i = 0; i < input.length; i+                         for (var j = 0; j < (input.le                                              if (input[j] > input[j                                     var temp = inpu                                 input[j] = i                                        input[j +                                   }
+                                                              nt.            = v;
+                                    docume            L = "Output";
+                                    doc            nnerHTML = input;
+                                }
+    </script>
+<footer>
         <div class="jumbotron">
             <div class="copyright" data-aos="fade-up">
                 <p> Designed and Developed by <a target="_black" href="https://github.com/tusharnayan10">Tushar
@@ -182,6 +159,4 @@
         </div>
 
     </footer>
-
-
 </html>
