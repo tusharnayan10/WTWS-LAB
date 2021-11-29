@@ -35,6 +35,12 @@ function lab3() {
 function lab6() {
     window.open("lab6")
 }
+function lab8() {
+    window.open("lab-8")
+}
+function lab9() {
+    window.open("lab-9")
+}
 
 // MY CALULATOR
 function multiplyBy() {

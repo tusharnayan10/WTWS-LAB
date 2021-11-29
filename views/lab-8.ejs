@@ -1,0 +1,79 @@
+<%- include('partials/header'); -%>
+    <div class="container">
+        <script>
+            function validateForm() {
+                let x = document.forms["myForm"]["fname"].value;
+                if (x == "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+                let y = document.forms["myForm"]["email"].value;
+                if (y == "") {
+                    alert("Email cannot be black");
+                    return false;
+                }
+                let z = document.forms["myForm"]["pass"].value;
+                if (z == "") {
+                    alert("Password cannot be black");
+                    return false;
+                }
+            }
+        </script>
+        <h1><strong>JavaScript Form Validation</strong></h1> .
+        <form name="myForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" name="fname" class="form-control" placeholder="Enter Full Name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" name="pass" class="form-control" placeholder="Enter password" id="pwd">
+            </div>
+
+            <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+    <div class="container">
+        <div class="alert alert-success">
+            <h1><strong>The onmouseover and onmouseout Events</strong></h1> .
+        </div>
+
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#000957;width:550px;height:120px;padding:10px; color: 
+            white; font-size: 3rem;">
+            Mouse Over Me</div>
+
+        <script>
+            function mOver(obj) {
+                obj.innerHTML = "Hey, I am Tushar Nayan"
+            }
+
+            function mOut(obj) {
+                obj.innerHTML = "Mouse Over Me"
+            }
+        </script>
+
+    </div>
+    <div class="container">
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div class="alert alert-success">
+            <h1><strong>When a user clicks the mouse</strong></h1> .
+        </div>
+        <h1 onclick="this.innerHTML='Hey, See text got changed!' "><strong>When a user clicks the mouse</strong>
+        </h1> .
+
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+    </div>
+    <%- include('partials/footer'); -%>
